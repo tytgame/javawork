@@ -3,12 +3,14 @@ package chap02_variable;
 public class Int_01 {
 
 	public static void main(String[] args) {
-		// 변수 : 저장공간
+		System.out.println("문자여");
+		System.out.println(5+8);
 		
+		// 변수 : 저장공간
 		/*		
 		 int : 정수를 저장하는 공간(4byte(32bit))
-		 double : 실수를 저장하는 공간
-		 char : 문자 1개
+		 double : 실수를 저장하는 공간(8byte)
+		 char : 문자 1개(2byte, 유니코드)
 		 String : 문자열
 		*/
 		
@@ -39,7 +41,7 @@ public class Int_01 {
 		// 덮어쓰기
 		number2 = 8;
 		
-		int sum = number+number2;
+		int sum = number+number2; // 12
 		System.out.println(number + "+" + number2 + "=" + (number+number2));
 		System.out.println(number + "+" + number2 + "=" + sum);
 
@@ -57,7 +59,7 @@ public class Int_01 {
 		int a = 5;
 		int b = 3;
 		// a * b 
-		System.out.println((a*b));
+		System.out.println((a*b)); // 15
 		
 	}
 
