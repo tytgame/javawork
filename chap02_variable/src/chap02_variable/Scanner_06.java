@@ -74,6 +74,40 @@ public class Scanner_06 {
 	 *    
 	 */
 	
+	// 두 수 입력받기
+	System.out.println("계산할 두개의 수를 입력하시오(띄어쓰기로) >> ");
+	int int1 = scan.nextInt();
+	int int2 = scan.nextInt();
+	System.out.println("입력받은 값 : " + int1 + " , " + int2); // 입력받은 수 출력
+	
+	// 두 수의 연산자 입력받기
+	System.out.println("계산할 연산자를 입력하시오( + , - , * , / ) >>");
+	char cal = scan.next().charAt(0);
+	
+	// 결과값 변수 생성
+	int result = 0;
+	
+	// 연산한 값 출력
+	switch (cal) {
+		case '+':
+			result = (int1 + int2);
+			System.out.println("연산값은 >> " + int1 + " " + cal + " " + int2 + " = " + result);
+			break;
+		case '-':
+			result = (int1 - int2);
+			System.out.println("연산값은 >> " + int1 + " " + cal + " " + int2 + " = " + result);
+			break;
+		case '*':
+			result = (int1 * int2);
+			System.out.println("연산값은 >> " + int1 + " " + cal + " " + int2 + " = " + result);
+			break;
+		case '/':
+			result = (int1 / int2);
+			System.out.println("연산값은 >> " + int1 + " " + cal + " " + int2 + " = " + result);
+			break;
+		default:
+			System.out.println("유효한 연산자를 입력하세요 ( + , - , * , / )");
+	}
 	
 	
 	
