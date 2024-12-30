@@ -27,7 +27,14 @@ public class Report_08 {
 		//
 		System.out.println("----------------------");
 		
-		// 스캐너
+		
+		
+		
+		/*System.out.print("점수 입력(국어,수학,컴퓨터점수를 띄어쓰기로 넣기) >> ");
+		int kor = sc.nextInt();
+		int math = sc.nextInt();
+		int com = sc.nextInt();*/
+		
 		System.out.print("국어점수 입력 >> ");
 		int kor = scan.nextInt();
 		System.out.print("수학점수 입력 >> ");
