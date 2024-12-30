@@ -46,13 +46,13 @@ public class Scanner_06 {
 	
 	*/
 	
-	System.out.println("정수 3개 입력(띄어쓰기로) >> ");
-	int num1 = scan.nextInt();
-	int num2 = scan.nextInt();
-	int num3 = scan.nextInt();
-	System.out.println("첫번째 숫자 : " + num1); // 단축키 : sysout 치고 컨트롤 + 스페이스바
-	System.out.println("두번째 숫자 : " + num2);
-	System.out.println("세번째 숫자 : " + num3);
+//	System.out.println("정수 3개 입력(띄어쓰기로) >> ");
+//	int num1 = scan.nextInt();
+//	int num2 = scan.nextInt();
+//	int num3 = scan.nextInt();
+//	System.out.println("첫번째 숫자 : " + num1); // 단축키 : sysout 치고 컨트롤 + 스페이스바
+//	System.out.println("두번째 숫자 : " + num2);
+//	System.out.println("세번째 숫자 : " + num3);
 	
 	// --------------------------------------------------------------------------
 	// 레포트
@@ -74,6 +74,27 @@ public class Scanner_06 {
 	 *    
 	 */
 	
+	System.out.println("정수 2개 입력(띄어쓰기)");
+	int num1 = scan.nextInt();
+	int num2 = scan.nextInt();
+	System.out.println(num1 + "+" + num2 + "=" + (num1+num2));
+	System.out.println(num1 + "-" + num2 + "=" + (num1-num2));
+	System.out.println(num1 + "*" + num2 + "=" + num1*num2);
+	System.out.println(num1 + "/" + num2 + "=" + num1/num2);
+	
+	System.out.println("연산자를 이ㅕㄱㅎ세요 : ");
+	char op = scan.next().charAt(0);
+	if(op == '+')
+		System.out.println(num1 + "+" + num2 + "=" + (num1+num2));
+	else if(op == '-')
+		System.out.println(num1 + "-" + num2 + "=" + (num1-num2));
+	else if(op == '*')
+		System.out.println(num1 + "*" + num2 + "=" + (num1*num2));
+	else if(op == '/')
+		System.out.println(num1 + "/" + num2 + "=" + (num1/num2));
+	
+	
+	// ----------------------------------------------------------------------------
 	// 두 수 입력받기
 	System.out.println("계산할 두개의 수를 입력하시오(띄어쓰기로) >> ");
 	int int1 = scan.nextInt();

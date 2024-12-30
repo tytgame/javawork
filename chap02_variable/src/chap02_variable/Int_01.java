@@ -3,7 +3,7 @@ package chap02_variable;
 public class Int_01 {
 
 	public static void main(String[] args) {
-		System.out.println("문자여");
+		System.out.println("문자열");
 		System.out.println(5+8);
 		
 		// 변수 : 저장공간

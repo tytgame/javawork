@@ -1,7 +1,6 @@
 package chap02_variable;
 
 public class 저장공간크기_04 {
-
 	public static void main(String[] args) {
 		System.out.println("byte크기 = " + Byte.MIN_VALUE + " ~ " + Byte.MAX_VALUE); // -128 ~ 127
 		System.out.println("short크기 = " + Short.MIN_VALUE + " ~ " + Short.MAX_VALUE); // -32768 ~ 32767
