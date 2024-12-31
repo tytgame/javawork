@@ -14,11 +14,11 @@ public class T04_logical {
 		
 		int num1 = 10;
 		int num2 = 20;
-		boolean result = num1 == num2 && num2<num1;
+		boolean result = num1 == num2 && num2>num1;
 							// f(0)   &&  t(1)
 		System.out.println(result); // false
 		
-		result = num1==num2 || num2>num1;
+		result = num1 == num2 || num2>num1;
 		System.out.println(result); // true
 		System.out.println("--------------------------------------");
 		
@@ -28,15 +28,15 @@ public class T04_logical {
 		System.out.println(!b1);	// true
 		System.out.println(!!b1);	// false
 		
-		// A : 65~90, a : 97
+		// A : 65~90, a : 97~1??
 		char ch1 = 'i';
 		System.out.println(ch1);
-		System.out.println("대문자인가? " + (ch1 >= 'A' && ch1 <= 'Z'));
-		System.out.println("소문자인가? " + (ch1 >= 'a' && ch1 <= 'z'));
+		System.out.println("대문자인가? " + (ch1 >= 'A' && ch1 <= 'Z')); // (int)A < i < Z -> false
+		System.out.println("소문자인가? " + (ch1 >= 'a' && ch1 <= 'z')); // (int)a < i < z -> true
 
 //		ch1 >= 'A' && ch1 <= 'Z'
 		
-		
+//			     ..., 65, 66, 67, 68, 69, ....
 //		... , 63, 64, 65, 66, ....
 		
 		

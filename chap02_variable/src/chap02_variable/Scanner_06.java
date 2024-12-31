@@ -32,6 +32,7 @@ public class Scanner_06 {
 	scan.nextLine(); 	// 24줄의 enter가 들어옴 nextLine()을 중간에 사용할 때는 한번 더 써줘서 앞의 enter를 넣어줌
 						// 혹은 맨 첫줄에 넣을때는 상관없음
 	
+	
 	System.out.print("주소 입력 : ");
 	String address = scan.nextLine();
 	System.out.println("주소는 : " + address);

@@ -29,7 +29,6 @@ public class Casting_02 {
 		
 		
 		
-		
 	}
 
 }

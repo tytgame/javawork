@@ -27,9 +27,9 @@ public class Fommat_07 {
 		System.out.printf("%.8s\n", url); // 왼쪽에서 8글자만 출력
 		System.out.println("--------------------------");
 
-		int octNum = 010; 	// 십진수 : 8
-		int hexNum = 0x10; 	// 십진수 : 16
-		int binNum = 0b10; 	// 십진수 : 2
+		int octNum = 010; 	// 8진수 -> 십진수로 8
+		int hexNum = 0x10; 	// 16진수 -> 십진수로 16
+		int binNum = 0b10; 	// 2진수 -> 십진수로 2
 		
 		System.out.printf("8진수=%o은 10진수=%d\n", octNum, octNum);
 		System.out.printf("16진수=%x은 10진수=%d\n", hexNum, hexNum);

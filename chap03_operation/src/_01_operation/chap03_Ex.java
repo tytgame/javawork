@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class chap03_Ex {
 
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
 
 		
@@ -22,7 +23,7 @@ public class chap03_Ex {
 		System.out.println("키를 입력하세요(cm) : ");
 		double height = scan.nextDouble();
 		
-		System.out.println("키 " + height + "cm인 " + age + "살 " + sex + "자 " + name + "님 반갑습니다^^");
+		System.out.println("키 " + height + "cm인 " + age + "살인 " + sex + "자 " + name + "님 반갑습니다^^");
 		System.out.println("-------------------");
 		
 		
@@ -39,28 +40,37 @@ public class chap03_Ex {
 
 		int sum = int1 + int2;
 		int sub = int1 - int2;
-		int square = int1 * int2;
+		int multi = int1 * int2;
 		int div = int1 / int2;
 		System.out.println("더하기 결과 : " + sum);
 		System.out.println("빼기 결과 : " + sub);
-		System.out.println("곱하기 결과 : " + square);
+		System.out.println("곱하기 결과 : " + multi);
 		System.out.println("나누기 결과 : " + div);
 		
 		
 		// 3
 		System.out.println("가로 : ");
-		double ver = scan.nextDouble();
+		float ver = scan.nextFloat();
 		System.out.println("가로 : " + ver);
 
 		System.out.println("세로 :");
-		double hor = scan.nextDouble();
+		float hor = scan.nextFloat();
 		System.out.println("세로 : " + hor);
 		
-		double area = ver*hor;
-		double cir = ((ver + hor)*2);
+		float area = ver*hor;
+		float cir = ((ver + hor)*2);
 
 		System.out.println("면적 : " + area);
 		System.out.println("둘레 : " + cir);
+		
+		// 4
+		System.out.println("문자열을 입력하세요 : ");
+		String letter = scan.next();
+		
+		System.out.println("첫 번째 문자 : " + letter.charAt(0));
+		System.out.println("두 번째 문자 : " + letter.charAt(1));
+		System.out.println("세 번째 문자 : " + letter.charAt(2));
+
 
 		
 		
