@@ -6,7 +6,7 @@ public class T04_중첩_if {
 		/*
 		 중첩if문
 		 if (바깥 조건식) {	// 바깥 조건식이 참일 때 실행될 구문
-		 	if(안의 조건식) {
+		 	if (안의 조건식) {
 		 		안의 조건식이 참일 때 실행될 구문
 		 	} else {
 		 		안의 조건식이 거짓일 때 실행될 구문
@@ -22,24 +22,24 @@ public class T04_중첩_if {
 		
 		int num1 = 0;
 		if(num1 > 100) {	// 100보다 큰 모든 수
-								}
 			if (num1 > 200) {
 				System.out.println("200보다 큰 숫자");
 			} else { // 200 보다 작은 수이면서 100보다 큰 수, 101 ~ 199
-				} 
-			{
-						System.out.println("100보다 크고 200보다 작은 수");
-					} // 100보다 작은 모든 수, 1 ~ 100, 0, -1, -2, ...
+				System.out.println("100보다 크고 200보다 작은수");
+			}  
+		} else {	// 100보다 작은 모든 수, 1 ~ 100, 0, -1, -2, ...
 					if (num1 > 0) { // 1~100
 						System.out.println("양수");
 							if(num1 % 2 == 0) {
 									System.out.println("짝수");
+								} else {
+									System.out.println("홀수");
 								}
 						} else if (num1 == 0) {
 								System.out.println("0");
-							} else {
-									System.out.println("음수");
-								}
+						} else {
+								System.out.println("음수");
+								}	
 				}
 		
 		
@@ -48,12 +48,7 @@ public class T04_중첩_if {
 		
 		
 		
-		
-		
-		
-		
-		
-		
 	}
+}
 
 

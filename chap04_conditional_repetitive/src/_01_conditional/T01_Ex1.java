@@ -8,9 +8,9 @@ public class T01_Ex1 {
 
 		/*
 		
-		1. 사용자로부터 국어, 영어, 수학 점수를 입력받아 
-   세 과목 점수가 각각 40점 이상이면서 평균이 60점 이상일 때 합격, 아니라면 불합격을 출력하세요.
-   (if문으로)
+1. 사용자로부터 국어, 영어, 수학 점수를 입력받아 
+세 과목 점수가 각각 40점 이상이면서 평균이 60점 이상일 때 합격, 아니라면 불합격을 출력하세요.
+(if문으로)
 
 2. id와 비밀번호를 변수에 저장하고
    사용자로부터 아이디와 비밀번호를 입력 받아
@@ -74,61 +74,192 @@ public class T01_Ex1 {
 		*/
 	Scanner scan = new Scanner(System.in);
 	
+	// 풀이
+	
+	// 스캐너
+	
+	/*	// 1번
+		
+		System.out.println("국어, 영어, 수학 점수 입력 : ");
+		int kor2 = scan.nextInt();
+		int eng2 = scan.nextInt();
+		int math2 = scan.nextInt();
+		
+		double avg2 = (kor2 + eng2 + math2) / 3.0;
+		
+		if (kor2 >= 40 && eng2 >= 40 && math2 >= 40 && avg2 >= 60) {
+			System.out.println("합격");
+		} else {
+			System.out.println("불합격");
+		}
+		
+		// 2번
+		
+		int id2 = 12345;
+		int pw2 = 9876;
+		
+		System.out.println("아이디와 비밀번호 입력(숫자만) : ");
+		int userId2 = scan.nextInt();
+		int userPw2 = scan.nextInt();
+		
+		// 첫 번째 방법
+		if (id2 == userId2) {
+			if (pw2 == userPw2) {
+				System.out.println("로그인 성공");
+			} else {
+				System.out.println("비밀번호가 틀렸습니다.");
+			}
+		} else {
+			System.out.println("아이디가 틀렸습니다.");
+		}
+		
+		
+		
+		// 두 번째 방법
+		if ( id2 == userId2 && pw2 == userPw2) {
+			System.out.println("로그인 성공");
+		} else if (id2 != userId2) {
+			System.out.println("아이디가 틀렸습니다");
+		} else {
+			System.out.println("비밀번호가 틀렸습니다.");
+		}
+		
+	
+	// 3번
+	
+	System.out.println("키와 몸무게 입력 : ");
+	double height2 = scan.nextDouble();
+	double weight2 = scan.nextDouble();
+	
+	double heightM = height2 / 100;
+	
+	double bmi2 = weight2 / (heightM * heightM);
+	System.out.println("당신의 BMI는 : " + bmi2);
+	
+	if (bmi2 < 18.5) {
+		System.out.println("저체중");
+	} else if (bmi2 < 23) {
+		System.out.println("표준체중");
+	} else if (bmi2 < 25) {
+		System.out.println("과체중");
+	} else if (bmi2 < 30) {
+		System.out.println("비만");
+	} else {
+		System.out.println("고도비만");
+	}
+	
+	*/
+	
+	
+	// 4번
+	
+	System.out.println("중간고사, 기말고사 점수 입력 : ");
+	int middleScore = scan.nextInt();
+	int finalScore = scan.nextInt();
+	
+	System.out.println("과제 점수 입력 : ");
+	int report2 = scan.nextInt();
+	
+	System.out.println("출석 횟수 입력(총 20회) : ");
+	int attendScore = scan.nextInt();
+	
+	double mScore = middleScore * 0.2;
+	double fScore = finalScore * 0.3;
+	double rScore = report2 * 0.3;
+	double result = mScore + fScore + rScore + attendScore;
+	System.out.println("-----------------------------");
+	
+	System.out.println("중간고사 점수 : " + middleScore);
+	System.out.println("기말고사 점수 : " + finalScore);
+	System.out.println("과제 점수 : " + report2);
+	System.out.println("출석 점수 : " + attendScore);
+	System.out.println("============= 결 과 ===============");
+	
+	if (attendScore < 20*0.7) {
+		System.out.printf("Fail [출석 횟수 부족(%d/20)]\n", attendScore);
+	} else {
+		System.out.printf("중간 고사 점수(20) : %.1f\n", mScore);
+		System.out.printf("기말 고사 점수(30) : %.1f\n", fScore);
+		System.out.printf("과제 점수(30) : %.1f\n", rScore);
+		System.out.printf("출석 점수(20) : %.1d\n", attendScore);
+		System.out.printf("총점 : %.1f\n", result);
+		if(result >= 70) {
+			System.out.println("PASS");
+		} else {
+			System.out.println("Fail [점수 미달]");
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	// 1번 문제
 	
-//	System.out.println("국어, 영어, 수학 점수를 차례대로 입력하시오 : ");
-//	int kor = scan.nextInt();
-//	int eng = scan.nextInt();
-//	int math = scan.nextInt();
-//	
-//	if (kor>= 40 && eng>= 40 && math >= 40 && (kor+eng+math)/3 >= 60) {
-//		System.out.println("합격입니다");
-//	} else {
-//		System.out.println("불합격입니다");
-//	}
+	System.out.println("국어, 영어, 수학 점수를 차례대로 입력하시오 : ");
+	int kor = scan.nextInt();
+	int eng = scan.nextInt();
+	int math = scan.nextInt();
+	
+	if (kor>= 40 && eng>= 40 && math >= 40 && (kor+eng+math)/3 >= 60) {
+		System.out.println("합격입니다");
+	} else {
+		System.out.println("불합격입니다");
+	}
 	
 	
 	// 2번 문제
 	
-//	
-//	int real_id = 1234;
-//	int real_password = 5678;
-//	
-//	System.out.println("아이디와 비밀번호를 차례대로 입력하시오 : ");
-//	int id = scan.nextInt();
-//	int password = scan.nextInt();
-//	
-//	if (real_id == id && real_password == password ) {
-//		System.out.println("로그인 성공");
-//	} else if (real_id != id) {
-//		System.out.println("아이디가 틀렸습니다");
-//	} else if (real_password != password) {
-//		System.out.println("비밀번호가 틀렸습니다");
-//	}
-//	
+	
+	int real_id = 1234;
+	int real_password = 5678;
+	
+	System.out.println("아이디와 비밀번호를 차례대로 입력하시오 : ");
+	int id = scan.nextInt();
+	int password = scan.nextInt();
+	
+	if (real_id == id && real_password == password ) {
+		System.out.println("로그인 성공");
+	} else if (real_id != id) {
+		System.out.println("아이디가 틀렸습니다");
+	} else if (real_password != password) {
+		System.out.println("비밀번호가 틀렸습니다");
+	}
+	
 	
 	
 	// 3번 문제
 	
-//	System.out.println("키, 몸무게를 차례대로 입력하시오 : ");
-//	double height = scan.nextDouble();
-//	double weight = scan.nextDouble();
-//	
-//    double BMI = weight / (height*height);
-//	
-//    if (BMI >= 30) {
-//    	System.out.println("고도 비만");
-//	} else if (BMI < 30 && BMI >= 25) {
-//		System.out.println("비만");
-//	} else if (BMI < 25 && BMI >= 23) {
-//		System.out.println("과체중");
-//	} else if (BMI < 23 && BMI >= 18.5) {
-//		System.out.println("과체중");
-//	} else {
-//		System.out.println("저체중");
-//	}
-//	
+	System.out.println("키, 몸무게를 차례대로 입력하시오 : ");
+	double height = scan.nextDouble();
+	double weight = scan.nextDouble();
+	
+	double height_div = height / 100;
+	
+    double BMI = weight / (height_div*height_div);
+	
+    if (BMI >= 30) {
+    	System.out.println("고도 비만");
+	} else if (BMI < 30 && BMI >= 25) {
+		System.out.println("비만");
+	} else if (BMI < 25 && BMI >= 23) {
+		System.out.println("과체중");
+	} else if (BMI < 23 && BMI >= 18.5) {
+		System.out.println("과체중");
+	} else {
+		System.out.println("저체중");
+	}
+	
     
     // 4번 문제
 	
@@ -136,43 +267,58 @@ public class T01_Ex1 {
 	int exam_mid = scan.nextInt();
 	int exam_last = scan.nextInt();
 	int report = scan.nextInt();
-	int check = scan.nextInt();
+	double check = scan.nextDouble();
 	
 	double score = (exam_mid*0.2 + exam_last*0.3 + report*0.3) + check;
-	String pass_fail;
-	if (score >=70) {
-		pass_fail = "Pass";
+//	String result3= "";
+	
+	
+	if (check <=14) {
+		System.out.println("중간고사 점수 : " + exam_mid +
+				   "\n기말고사 점수 : " + exam_last +
+				   "\n과제 점수 : " + report +
+				   "\n출석 횟수 : " + (int)check +
+				   "\n========결과=========" +
+				   "\nFail [출석 횟수 부족(" + (int)check + "/20)]");
+	} else if (score >= 70) {
+		System.out.println("중간고사 점수 : " + exam_mid +
+				   "\n기말고사 점수 : " + exam_last +
+				   "\n과제 점수 : " + report +
+				   "\n출석 횟수 : " + (int)check +
+				   "\n========결과=========" +
+				   "\n중간 고사 점수(20) : " + exam_mid*0.2 +
+				   "\n기말 고사 점수(30) : " + exam_last*0.3 +  
+				   "\n과제 점수(30) : " + report*0.3 +
+				   "\n출석 횟수(20) : " + check +
+				   "\n총점 : " + score +
+				   "\nPass");
 	} else {
-		pass_fail = "Fail";
+		System.out.println("중간고사 점수 : " + exam_mid +
+				   "\n기말고사 점수 : " + exam_last +
+				   "\n과제 점수 : " + report +
+				   "\n출석 횟수 : " + (int)check +
+				   "\n========결과=========" +
+				   "\n중간 고사 점수(20) : " + exam_mid*0.2 +
+				   "\n기말 고사 점수(30) : " + exam_last*0.3 +  
+				   "\n과제 점수(30) : " + report*0.3 +
+				   "\n출석 횟수(20) : " + check +
+				   "\n총점 : " + score +
+				   "\nFail [점수 미달]");
 	}
 	
-	System.out.println("중간고사 점수 : " + exam_mid +
-					   "\n기말고사 점수 : " + exam_last +
-					   "\n과제 점수 : " + report +
-					   "\n출석 횟수 : " + check +
-					   "\n========결과=========" +
-					   "\n중간 고사 점수(20) : " + exam_mid*0.2 +
-					   "\n기말 고사 점수(30) : " + exam_last*0.3 +  
-					   "\n과제 점수(30) : " + report*0.3 +
-					   "\n출석 횟수(20) : " + check +
-					   "총점 : " + score
-			
-			);
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+//	System.out.println("중간고사 점수 : " + exam_mid +
+//					   "\n기말고사 점수 : " + exam_last +
+//					   "\n과제 점수 : " + report +
+//					   "\n출석 횟수 : " + check +
+//					   "\n========결과=========" +
+//					   "\n중간 고사 점수(20) : " + exam_mid*0.2 +
+//					   "\n기말 고사 점수(30) : " + exam_last*0.3 +  
+//					   "\n과제 점수(30) : " + report*0.3 +
+//					   "\n출석 횟수(20) : " + check +
+//					   "\n총점 : " + score +
+//					   "\n" + result3);
+		
 	
 		
 	}
