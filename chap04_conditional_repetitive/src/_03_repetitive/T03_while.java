@@ -48,7 +48,7 @@ public class T03_while {
 		while (true) {
 			System.out.println(++count);
 			if(count == 5) { 	
-				break;		// 이게 없으면 무한루프
+				break;		// 이게 없으면 무한루프, 반복문을 빠져나옴
 			}
 		}
 		System.out.println("----------");
@@ -75,7 +75,7 @@ public class T03_while {
 				break;		// 멈추는 조건 반드시 필요는 X
 			}
 		}
-		System.out.println("4 까지의 합 : " + sum);
+		System.out.println("4 까지의 합 : " + sum);	// sum == 10
 		System.out.println("============================");
 
 		// continue
@@ -85,7 +85,8 @@ public class T03_while {
 		sum = 0;
 		for(int j=1; j<=100; j++) {
 			if (j%3 == 0) {
-				continue;		// ~~ 를 제외한 정도의 뜻으로 해석하면 쉬움
+				continue;		// '~~ 를 제외한' 정도의 뜻으로 해석하면 쉬움
+								// continue 아래의 명령문을 실행하지 않음
 			}		// break : ~~ 할때 멈춰라
 			
 			sum += j;		// 1 + 2 + 4 + .... + 98 + 100

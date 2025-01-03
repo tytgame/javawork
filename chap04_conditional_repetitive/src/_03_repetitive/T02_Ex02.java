@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class T02_Ex02 {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		
 		/*
@@ -13,6 +13,7 @@ public class T02_Ex02 {
 		    사용자로 부터 숫자 입력받아서
 		    숫자를 맞추면 '축하합니다. 맞췄습니다' 하고 끝내기
 		    못맞췄으면 계속 물어보기
+		   
 		
 		2. 구구단 옆으로 출력하기
 		   ex)
@@ -32,108 +33,135 @@ public class T02_Ex02 {
 		// 1번
 		
 		
-//		int random = (int)(Math.random()*6 + 1);	// 1 ~ 6
-//		System.out.println(random);
-//		
-//		Scanner sc = new Scanner(System.in);
-//
-//		
-//		while(true) {
-//			System.out.println("숫자를 입력하세요(1~6) : ");
-//			int number = sc.nextInt();
-//			if (number == random) {
-//				break;
-//			}
-//		}
-//		System.out.println("축하합니다. 맞췄습니다");
+		int random = (int)(Math.random()*6 + 1);	// 1 ~ 6
+		
+		Scanner sc = new Scanner(System.in);
+
+		
+		while(true) {
+			System.out.println("숫자를 입력하세요(1~6) : ");
+			int number = sc.nextInt();
+			if (number == random) {
+				break;
+			}
+		}
+		System.out.println("축하합니다. 맞췄습니다");
 		
 		System.out.println("---------------------------------");
 		
-//		// 2번
-//		
-//		for(int i=1;i<=9;i++) {
-//			for(int dan=2;dan<=9;dan++) {
-//				System.out.print(dan + "*" + i +"= " + dan*i + "  ");
-//			}
-//			System.out.println();
-//		}
-//		
+		// 2번
+		
+		for(int i=1;i<=9;i++) {
+			for(int dan=2;dan<=9;dan++) {
+				System.out.print(dan + "*" + i +"= " + dan*i + "  ");
+			}
+			System.out.println();
+		}
+		System.out.println("--------------------------");
+
+		
 		
 		
 		// java 책. 3번
 		
-//		int sum = 0;
-//		
-//		for(int i=0;i<=100;i+=5) {
-//			sum += i;
-//		}
-//		
-//		System.out.println("5의 배수의 합계는 " + sum);
-//		
+		int sum = 0;
 		
-//		// java 책. 4번
-//		
-//		int evenSum = 0;	// 짝수
-//		int oddSum = 0;		// 홀수
-//		
-//		for (int i=1; i<=100; i++) {
-//			if (i%2 == 0) {
-//				evenSum += i;
-//			} else if (i%2 == 1) {
-//				oddSum += i;
-//			}
-//		}
-//		
-//		System.out.println("짝수의 합계는 " +evenSum);
-//		System.out.println("홀수의 합계는 " +oddSum);
-//		
+		for(int i=0;i<=100;i+=5) {
+			sum += i;
+		}
 		
-		
-//		// java 책. 5번
-//		
-//		for(int x=1; x<=6;x++) {
-//			for(int y=1; y<=6; y++) {
-//				if(x+y == 6) {
-//					System.out.println("(" + x + "," + y + ")");
-//				}
-//			}
-//		}
+		System.out.println("5의 배수의 합계는 " + sum);
+		System.out.println("--------------------------");
 
 		
-//		// java 책. 6번
-//		
+		
+		// java 책. 4번
+		
+		int evenSum = 0;	// 짝수
+		int oddSum = 0;		// 홀수
+		
+		for (int i=1; i<=100; i++) {
+			if (i%2 == 0) {
+				evenSum += i;
+			} else if (i%2 == 1) {
+				oddSum += i;
+			}
+		}
+		
+		System.out.println("짝수의 합계는 " +evenSum);
+		System.out.println("홀수의 합계는 " +oddSum);
+		System.out.println("--------------------------");
+
+		
+		
+		
+		// java 책. 5번
+		
+		for(int x=1; x<=6;x++) {
+			for(int y=1; y<=6; y++) {
+				if(x+y == 6) {
+					System.out.println("(" + x + "," + y + ")");
+				}
+			}
+		}
+		System.out.println("--------------------------");
+
+
+		
+		// java 책. 6번
+		
 		for(int i=1;i<=5;i++) {
 			for(int j=1;j<=i;j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
+		System.out.println("--------------------------");
+
 		
 
-//		// java 책. 7번
-//		
-//		for(int i=0;i<5;i++) {
-//			for(int j=1;j<=5-i;j++) {
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
-//		
+		// java 책. 7번
+		
+		for(int i=0;i<5;i++) {
+			for(int j=1;j<=5-i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		System.out.println("--------------------------");
 
 		
 		// java 책. 8번
 		
-		
 
-//		6번
-		
-//		for(int i=1;i<=5;i++) {
-//			for(int j=1;j<=i;j++) {
-//				System.out.print("*");
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=5-i;j++) {
+				System.out.print(" ");
+			}
+			for(int k=0;k<2*i-1;k++) {
+				System.out.print("*");
+			}
+//			for(int j=1;j<=5-i;j++) {
+//				System.out.print(" ");
 //			}
-//			System.out.println();
-//		}
-//		
+			System.out.println();
+		}
+		System.out.println("--------------------------");
+
+		
+		// java 책. 9번
+		
+		int count = 0;
+		
+		while (true) {
+			count++;
+			int random2 = (int)(Math.random()*6 + 1);	// 1 ~ 6 주사위
+			System.out.println("(" + random2 + ")");
+			if ( random2 == 6) {
+				break;
+			}
+		}
+		System.out.println("총 주사위 굴린 횟수는 : " + count + "회");
 		
 		
 		
@@ -154,6 +182,11 @@ public class T02_Ex02 {
 		// 실행결과
 		/*	
 			
+			*		1 4
+			**		2 3
+			***		3 2
+			****	4 1
+			*****	5 0
 			
 			
 			0000*0000	4 1 4

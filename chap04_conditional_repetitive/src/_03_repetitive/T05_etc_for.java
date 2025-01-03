@@ -20,19 +20,19 @@ public class T05_etc_for {
 		
 		// for(;;) : while(true)와 동일 -> 무한루프
 		int num7 = 10;
-		for(;;) {
+		for(;;) {		
 			System.out.println(num7);
 			
-			if(num7==15) {
+			if(num7 == 15) {
 				break;
 			}
-			
 			num7++;
 		}
 		
 		System.out.println("------------------------------");
 		
-		// for문에 이름을 달아줄 수 있다
+		// for문에 '이름'을 달아줄 수 있다
+		
 		loop : for(int dan=2;dan<=9;dan++) { 	// for문의 이름 -> loop
 			for(int i =1;i<=9;i++) {
 				System.out.println(dan + "*" + i + "=" + dan*i);
@@ -42,6 +42,7 @@ public class T05_etc_for {
 			}
 			System.out.println();
 		}
+		
 		System.out.println("구구단 종료");
 		System.out.println("------------------------------------");
 		

@@ -22,6 +22,7 @@ public class T06_math_random {
 		// 0~4까지 정수만 출력
 		int random5  = (int)(Math.random() * 5); 	// random에서 나올 수 있는 제일 큰 수는 0.99999999기 때문에
 													// 여기에 5를 곱하면 최대 4.99999. ---> 0~4 출력
+													// 0.9 * 5 = 4.5 --> 정수만 뽑으면 4
 		System.out.println(random5);
 		
 		// 1~5까지 정수만 출력
