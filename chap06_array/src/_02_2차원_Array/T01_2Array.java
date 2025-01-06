@@ -15,7 +15,7 @@ public class T01_2Array {
 			System.out.println(score[2][3]);  // 3행 4열 : 4 출력
 			System.out.println(score[0][1]);  // 1행 2열 : 2 출력
 			
-			for(int row=0; row<score.length; row++) {
+			for(int row=0; row<score.length; row++) { 	// 행의 길이만큼, == 3
 				for (int column=0; column <score[row].length;column++) {
 					System.out.print(score[row][column] + " ");
 				}
@@ -34,7 +34,7 @@ public class T01_2Array {
 		
 			int[][] score2 = {	
 						{1, 2, 3, 4, 5},   // [0] -> 행의 index번호
-		 				{6, 7, 8},   // [1]
+		 				{6, 7, 8},   	   // [1]
 		 				{7, 6, 5, 4}
 		 									};
 			
@@ -48,10 +48,10 @@ public class T01_2Array {
 			System.out.println("---------------------------------");
 			
 		
-			System.out.println("score2의 행의 길이 : " + score2.length); 	// length -> 행의 길이출력
-			System.out.println("score2[0]의 열의 길이 : " + score2[0].length);	// 첫 번째 행의 길이
-			System.out.println("score2[1]의 열의 길이 : " + score2[1].length);	// 두 번째 행의 길이
-			System.out.println("score2[2]의 열의 길이 : " + score2[2].length);	// 세 번째 행의 길이
+			System.out.println("score2의 행의 길이 : " + score2.length); 			// length -> 행의 길이출력
+			System.out.println("score2[0]의 열의 길이 : " + score2[0].length);		// 첫 번째 행의 길이
+			System.out.println("score2[1]의 열의 길이 : " + score2[1].length);		// 두 번째 행의 길이
+			System.out.println("score2[2]의 열의 길이 : " + score2[2].length);		// 세 번째 행의 길이
 			
 
 		

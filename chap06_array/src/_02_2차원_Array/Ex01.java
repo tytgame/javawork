@@ -5,10 +5,12 @@ import java.util.Scanner;
 
 public class Ex01 {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+
 		
-//		1. 길이 10인 배열을 선언하고 1~10까지 반복문을 
+//		1. 길이 10인 배열을 선언하고 1~10까지 반복문을
 //		   이용하여 순서대로 넣고 출력하기
 		
 		int[] intArr = new int[10];
@@ -35,7 +37,6 @@ public class Ex01 {
 		System.out.println();
 		System.out.println("--------------------------------");
 		
-		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("만들 배열의 수를 입력하세요 : ");
 		int number = sc.nextInt();
@@ -75,6 +76,32 @@ public class Ex01 {
 //			wordArr[i] = word.indexOf(i);
 //		}
 		
+		System.out.println("문자열 입력 : ");
+		String str1 = sc.next();
+		System.out.println("찾을 문자 입력 : ");
+		char search = sc.next().charAt(0);
+		
+		char[] chRe = new char[str1.length()];
+		
+		int count = 0;
+		String index = "";
+		// index를 배열 이용해서 풀이
+//		int[] index2 = new int[str1.length()];
+//		int z = 0;
+		
+		for(int i=0; i<chRe.length; i++) {
+			chRe[i] = str1.charAt(i);
+			if ( chRe[i] == search) {
+				count++;
+				index += i + " ";
+//				index2[z++] = i;
+			}
+		}
+
+		System.out.println(str1 + "에" + search + "가 존재하는 위치(인덱스) : " + index);
+		System.out.println(search + "개수 : " + count);
+		System.out.println();
+		System.out.println();
 //
 //		6. 배열에 요일(월,화,수,목,금,토,일)을 초기화하여 넣고 사용자로 부터 0~6사이의 숫자를 입력받아
 //		   숫자와 같은 요일 출력
@@ -139,24 +166,35 @@ public class Ex01 {
 //		7
 //		1 2 3 4 3 2 1
 		
-		int evenNum = 0;
+		int oddNum = 0;
 		do {
 			System.out.println("3 이상인 홀수 자연수를 입력하세요 : ");
-			evenNum = sc.nextInt();
-			if(evenNum < 3 || evenNum%2 == 0 ) {
+			oddNum = sc.nextInt();
+			if(oddNum < 3 || oddNum%2 == 0 ) {
 				System.out.println("다시 입력하세요");
 			}
-		} while (evenNum < 3 || evenNum%2 == 0 );
+		} while (oddNum < 3 || oddNum%2 == 0 );
 		
-		int[] evenArr = new int[evenNum];
+		int[] oddArr = new int[oddNum];
 		
+		for(int i =0;i<oddNum;i++) {
+			if (i <= oddNum/2) {
+				oddArr[i] = i+1;
+			} else {
+				oddArr[i] = oddNum-i;
+			}
+		}
+		
+		//
+		//
+		//
 		
 		// TODO : 1 2 3 2 1 / 1 2 3 4 5 4 3 2 1 이런 배열 만들기
 //		for(int i=0; i<evenNum; i++) {
 //			evenArr[i] = i+1;
 //		}
 		
-		System.out.println(Arrays.toString(evenArr)); // <-- 이걸로 확인
+		System.out.println(Arrays.toString(oddArr)); // <-- 이걸로 확인
 		
 
 		
@@ -171,7 +209,28 @@ public class Ex01 {
 //		   치킨 이름을 입력하세요 : 불닭
 //		   불닭치킨은 없는 메뉴입니다.
 		
+		System.out.println("치킨 이름을 입력하세요 : ");
+		String name_chicken = sc.next();
 		
+		String[] menu_chicken = new String[] {"양념", "후라이드"};
+		
+		if(name_chicken.equals("양념") || name_chicken.equals("후라이드")) {
+			System.out.println(name_chicken + "치킨 배달 가능");
+		} else {
+			System.out.println(name_chicken + "치킨은 없는 메뉴입니다.");
+		}
+		
+		
+		// 질문 1 if 조건식 안에 for문 사용 불가 ?? 메뉴가 무수히 많을땐 어떻게하지
+//		if(
+//				for(int i=0;i<menu_chicken.length;i++) {
+//					name_chicken.equals(menu_chicken[i]);
+//				}
+//				) {
+//			System.out.println(name_chicken + "치킨 배달 가능");
+//		} else {
+//			System.out.println(name_chicken + "치킨은 없는 메뉴입니다.");
+//		}
 		
 		
 		
@@ -183,7 +242,7 @@ public class Ex01 {
 //		     배열 전체 값과 그 값 중에서 최대값과 최소값을 출력하세요.
 //
 //		     ex.
-//		     5 3 2 7 4 8 6 10 9 10 
+//		     5 3 2 7 4 8 6 10 9 10
 //		     최대값 : 10
 //		     최소값 : 2
 		
@@ -195,6 +254,11 @@ public class Ex01 {
 //
 //		11. 사용자로부터 정수값 5개 배열에 입력
 //		   오름차순 정렬로 정렬하기
+		
+		
+		
+		
+		
 //
 //		12. 각 학생별 국어 영어 수학점수의 총점과 평균을 구하고
 //		   각 과목별 총점과 평균을 구해 아래와 같이 출력하기
