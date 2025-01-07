@@ -21,7 +21,7 @@ public class T01_api_method {
 	int print2() {
 		System.out.println("반환형이 int이고 매개변수는 없는 메소드");
 		int num = 5;
-		return 10;
+		return num+5;
 	}
 		
 	String print3() {

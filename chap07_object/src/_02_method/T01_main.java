@@ -15,7 +15,7 @@ public class T01_main {
 		
 		System.out.println(m1.print4()); // true
 		
-		m1.print5(10); 	// 10
+		m1.print5(10); 	// 10, 매개변수에 반드시 값을 넣어야 함
 		
 		int sum = m1.print6(3, 10);	// sum = 13
 		System.out.println(sum);
@@ -29,8 +29,6 @@ public class T01_main {
 		T01_api_op m2 = new T01_api_op();
 
 		System.out.println(m2.add(5, 7));
-		
-		
 		
 		int result1 = m2.add(10, 5);
 		System.out.println(result1);
