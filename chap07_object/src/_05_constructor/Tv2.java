@@ -11,10 +11,14 @@ public class Tv2 {
 	}
 	
 	
-	Tv2(String company1, String model1, int inch1) {
+	Tv2(String company1, String model1, int inch1) { // <-- 매개변수가 없으면 Tv2 tv2 = new Tv2(); 이런식으로 만들면 됨
 		company = company1;
 		model = model1;
 		inch = inch1;
 
+		
+		
+		
+	
 	}
 }
