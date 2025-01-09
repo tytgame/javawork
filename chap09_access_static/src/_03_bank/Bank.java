@@ -4,7 +4,7 @@ public class Bank {
 	private int balance;
 		//	int balance2;
 
-	void deposit(int amount) {
+	public void deposit(int amount) {
 		System.out.println(amount + "원을 입금합니다.");
 		balance += amount;
 		}
@@ -16,7 +16,7 @@ public class Bank {
 	//}
 
 
-	void withdraw(int amount) {
+	public void withdraw(int amount) {
 		if (amount <= balance) {
 			System.out.println(amount + "원을 출금합니다.");
 			balance -= amount;
@@ -25,7 +25,7 @@ public class Bank {
 	}
 
 
-	void getBalance() {
+	public void getBalance() {
 		System.out.println("현재 잔액은 " + balance + "원 입니다.");
 	}
 

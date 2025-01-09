@@ -11,7 +11,7 @@ class Child3 extends Parent3 {
 	}
 	void display() {
 		show();		// "자식 클래스 메소드"
-		super.show();	// "부모 클래스 메소드"
+		super.show();	// "부모 클래스 메소드" , super를 사용하려면 반드시 부모(상속관계)가 있어야함
 	}
 }
 public class T03_superMethod_main {

@@ -2,19 +2,15 @@ package _02_car;
 
 public class Car { // 기본적인 기능 (부모)
 	
-	String model;
+	public String model;
 	String company;
 	boolean power;
 	int speed;
 		
-	
-	
 	Car(String model, String company) { 
 		this.model = model;
 		this.company = company;
 	}
-		
-		
 
 	void power() {
 		if (power = !power) {

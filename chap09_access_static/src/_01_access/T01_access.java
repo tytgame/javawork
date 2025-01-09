@@ -9,7 +9,7 @@ public class T01_access {
 	  setter, getter 메소드
 	  : 변수 앞에 private에 접근 할 수 있도록 메소드 정의
 	  - setter 메소드 : private가 붙은 변수에 값을 넣을 때 사용함
-	   반환형 set변수명(자료형 변수명) {
+	   반환형 set변수명(자료형 변수명) {  						--> 변수명 첫 글자는 대문자로
 	   		this.변수명 = 변수명;
 	   }
 	  - getter 메소드 : private 변수의 값을 리턴

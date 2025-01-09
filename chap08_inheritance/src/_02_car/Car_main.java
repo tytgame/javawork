@@ -12,9 +12,5 @@ public class Car_main {
 		am1.firstAid();
 		am1.siren();
 		am1.power();
-		
-		
-		
-		
 	}
 }

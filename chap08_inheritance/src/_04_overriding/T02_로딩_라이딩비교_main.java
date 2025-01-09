@@ -1,11 +1,11 @@
 package _04_overriding;
-class Loading {
+class Loading {		// 부모
 	void show(String str) {
 		System.out.println("부모클래스 메소드 : " + str);
 	}
 }
 
-class LoadingChild extends Loading {
+class LoadingChild extends Loading {	// 자식
 	// 오버로딩 : 부모, 내자신의 메소드
 	void show(int num) { 
 		System.out.println("자식클래스 메소드 : " + num);
