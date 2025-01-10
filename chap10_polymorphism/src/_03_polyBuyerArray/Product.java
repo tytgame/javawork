@@ -1,4 +1,4 @@
-package _02_polyBuyer;
+package _03_polyBuyerArray;
 // 부모
 class Product {
 	int price;

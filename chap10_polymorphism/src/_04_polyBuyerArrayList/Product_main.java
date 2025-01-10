@@ -1,4 +1,4 @@
-package _02_polyBuyer;
+package _04_polyBuyerArrayList;
 
 public class Product_main {
 
@@ -7,15 +7,26 @@ public class Product_main {
 		
 		System.out.println(b);	// 해시번호가 나옴
 		System.out.println("---------------------");
-		
+		Tv tv = new Tv();
+		Computer com = new Computer();
+		GameDevice game1 = new GameDevice();
+		GameDevice game2 = new GameDevice();
+		GameDevice game3 = new GameDevice();
 
-		b.buy(new GameDevice());
-		b.buy(new Computer());
-		b.buy(new Tv());
+		b.buy(game1);
+		b.buy(com);
+		b.buy(game2);
+		b.buy(tv);
+		b.buy(game3);
 		System.out.println("현재 남은 돈 : " + b.money + "만원");
 		System.out.println("보너스 점수 : " + b.bonusPoint + "점");
+
+		b.getInfo();
 		
-		b.buy(new Tv());
+		b.refund(game2);
+		b.getInfo();
+		b.refund(game2);
+
 		
 		
 		
