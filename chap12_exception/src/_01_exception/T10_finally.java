@@ -15,11 +15,10 @@ public class T10_finally {
 			System.out.println(num[3]);
 		} catch(Exception e) {
 			System.out.println("index의 범위를 넘어섬");
+			return;
 		} finally {
 			System.out.println("예외가 발생해도 실행 안해도 실행");
 		}
-		
-		
+		System.out.println("일반 실행");
 	}
-
 }

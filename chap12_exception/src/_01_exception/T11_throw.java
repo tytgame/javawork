@@ -9,7 +9,6 @@ public class T11_throw {
 		try {
 			Exception e = new Exception("고의로 예외발생시킴"	);
 			throw e;
-			
 		} catch(Exception e) {
 			System.out.println("예외 메시지 : " + e.getMessage());
 		}
