@@ -19,8 +19,6 @@ public class Bank_main {
 		} catch (Exception e) {
 			System.out.println("예외 발생");
 		}
-		
-		
 	}
 
 }

@@ -22,7 +22,5 @@ public class T05_getClass {
 		
 		System.out.println(dog1.getClass());
 		System.out.println(dog1.getClass().getName());
-
 	}
-
 }
