@@ -14,7 +14,8 @@ public class T03_add_calendar {
 		Calendar date2 = Calendar.getInstance();
 		date2.add(Calendar.DATE, -100); // 100일 전
 		
-		System.out.println("오늘 부터 100일 전 : "+ date2.get(Calendar.YEAR) + "년 " + (date2.get(Calendar.MONTH)+1) + "월 " 
+		System.out.println("오늘 부터 100일 전 : "+ date2.get(Calendar.YEAR) + "년 "
+												+ (date2.get(Calendar.MONTH)+1) + "월 " 
 												+date2.get(Calendar.DATE) + "일");
 		
 		Calendar date3 = Calendar.getInstance();

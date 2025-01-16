@@ -25,7 +25,7 @@ public class T01_Calendar {
 		System.out.println("--------------------------------------------");
 		
 		// 요일
-		int week = today.get(Calendar.DAY_OF_WEEK); // 1 == 일요일
+		int week = today.get(Calendar.DAY_OF_WEEK); // 1 : 일요일
 		System.out.println("요일 : " + week);
 		
 		switch (week) {
