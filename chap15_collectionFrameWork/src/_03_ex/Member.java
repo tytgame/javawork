@@ -12,22 +12,22 @@ public class Member {
 		this.gender = gender;
 	}
 		
-	String setName(String name) {
+	public String setName(String name) {
 		return this.name = name;
 	}	
-	int setAge(int age) {
+	public int setAge(int age) {
 		return this.age = age;
 	}
-	String setGender(String gender) {
+	public String setGender(String gender) {
 		return this.gender = gender;
 	}
-	String getName(String name) {
+	public String getName(String name) {
 		return name;
 	}	
-	int getAge(int age) {
+	public int getAge(int age) {
 		return age;
 	}
-	String getGender(String gender) {
+	public String getGender(String gender) {
 		return gender;
 	}
 	

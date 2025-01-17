@@ -12,22 +12,22 @@ public class Book {
 		this.publisher = publisher;
 	}
 		
-	String setTitle(String title) {
+	public String setTitle(String title) {
 		return this.title = title;
 	}	
-	String setAuthor(String author) {
+	public String setAuthor(String author) {
 		return this.author = author;
 	}
-	String setPublisher(String publisher) {
+	public String setPublisher(String publisher) {
 		return this.publisher = publisher;
 	}
 	public String getTitle() {
 		return title;
 	}	
-	String getAuthor(String author) {
+	public String getAuthor(String author) {
 		return author;
 	}
-	String getPublisher(String publisher) {
+	public String getPublisher(String publisher) {
 		return publisher;
 	}
 	

@@ -155,24 +155,44 @@ public class Ex_01 {
 		12345678910*/
 		int sum2 = 0;
 		for(int i=1;i<=10;i++) {
-			for(int j=1;j<=10;j++) {
-				sum2 += j;
+			for(int j=1;j<=i;j++) {
+				sum2 += j;			// sum = 1 2 3 ... 8  9 10 , 1 2 3 ... 10
 			}
-			sum2 += i;
 		}
-		System.out.println(sum2); 	// 605
+		System.out.println(sum2); 	// 220
+		
+		// 4-4
+		int sum3 = 0;
+		
+		for(int i=1;i<300;i++) {
+			sum3 += -((-i) * (Math.pow(-1, i)));	
+			System.out.print(i + " ");
+			if(sum3 > 100) {
+				break;
+			}
+		}
+		// 202
+		
+		// 4-5
+		
+		for(int i=0;i<=10;i++) {
+			for(int j=0; j<=i;j++) {
+				System.out.print("*");	// 2 ~ 11개 순서대로, 스페이스바 총 10번 , 마지막 별 11개
+				}					
+			System.out.println("");
+		}
 		
 		
+		int count = 0;
+		while (count < 11) {
+			System.out.print("*");
+			count++;
+//			if()	 ~~ 하면 스페이스바 
+		}
+		
+
+
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+		}
 }

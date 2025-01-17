@@ -9,6 +9,8 @@ public class BookRun {
 		LibraryController lc = new LibraryController(new Member("김이름",99,"남자"));
 		
 		lc.insertBook();
+		lc.info();
+		System.out.println("--------------------------");
 		System.out.println(lc.selectAll());
 		
 		lc.insertBook(new Book("springBoot", "박봄이", "위키북스"));
@@ -25,5 +27,5 @@ public class BookRun {
 			System.out.println("찾은 책 : " + book2);			
 		}
 	}
-
 }
+
