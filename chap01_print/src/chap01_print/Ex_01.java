@@ -187,7 +187,7 @@ public class Ex_01 {
 		while (count < 11) {
 			System.out.print("*");
 			count++;
-//			if()	 ~~ 하면 스페이스바 
+//			if()	 ~~ 하면 스페이스바  
 		}
 		
 

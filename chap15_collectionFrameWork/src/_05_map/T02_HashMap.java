@@ -49,7 +49,7 @@ public class T02_HashMap {
 			}
 		} else {	// 아이디가 없음 -> false
 			System.out.println("존재하지 않는 id입니다");
-		}
+			}
 		
 
 	}

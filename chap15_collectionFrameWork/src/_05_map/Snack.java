@@ -25,6 +25,4 @@ public class Snack {
 	public String toString() {
 		return "Snack [flavor=" + flavor + ", calory=" + calory + "]";
 	}
-	
-	
 }

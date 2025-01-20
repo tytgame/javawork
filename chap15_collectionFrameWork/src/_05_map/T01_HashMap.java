@@ -42,7 +42,5 @@ public class T01_HashMap {
 			int value = map.get(key);
 			System.out.println(key + " : " + value);
 		}
-		
-		
 	}
 }
