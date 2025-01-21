@@ -1,0 +1,16 @@
+package _03_enum;
+
+public enum Month {
+	JANUARY,
+	FEBURARY,
+	MARCH,
+	APRIL,
+	MAY,
+	JUNE,
+	JULY,
+	AUGUST,
+	SEPTEMBER,
+	OCTOBER,
+	NOVEMBER,
+	DECEMBER
+}

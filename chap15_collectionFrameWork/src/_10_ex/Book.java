@@ -52,8 +52,7 @@ public class Book implements Comparable<Book>{
 	}
 	@Override
 	public int compareTo(Book o) {
-		
-		return getTitle();
+		return title.compareTo(o.getTitle());
 	}
 
 	

@@ -66,17 +66,7 @@ public class BookMenu extends LibraryController{
 	void searchBook() {
 		System.out.println("검색할 도서명을 입력하세요 : ");
 		String bookTitle = sc.next();
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
 	void deleteBook() {	// 도서 삭제
 		//	aList.remove();
 	}

@@ -28,11 +28,14 @@ public class BookRun {
 		
 		System.out.println("----------------------------");
 		
-		/*BookMenu bm = new BookMenu();
+		/*
+		BookMenu bm = new BookMenu();
 		bm.insertBook("1", "2", "3");
 		bm.addBook("4", "5", "6");
 		
 		System.out.println(bm.searchAllBooks());
+		
+		
 		
 		System.out.println(bm.searchBooks("1"));
 		bm.deleteBook("1");

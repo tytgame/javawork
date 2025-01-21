@@ -19,10 +19,6 @@ public class LibraryController {
 	ArrayList<Book> selectAll() {
 		return aList;
 	}
-	
-	
-
-	
 	Book searchBook(String bookTitle) {
 		Book book = null;
 		for(int i=0;i<aList.size();i++) {
