@@ -30,7 +30,6 @@ class Banana2 {
 		bana.set(new Banana2());
 		Banana2 banana = bana.get();
 		System.out.println(banana.bool);
-		
 	}
 }
 	

@@ -33,11 +33,7 @@ public class T01_Thread {
 		Thread t3 = new Thread(new Thread2());
 		
 		t1.start();		// t1 스레드 실행
-		t2.start();
-		
-		
-		
-		
+		t2.start();	
 	}
 
 }
